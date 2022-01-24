@@ -195,6 +195,27 @@ html {
     opacity: 1;
 }
 
+.footer {
+    height: 50px;
+    background-color: rgb(27, 38, 59);
+    position: relative;
+}
+
+.footer .fa-discord {
+    font-size: 40px;
+    color: #7289da;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: .4s;
+    opacity: .5;
+}
+
+.footer .fa-discord:hover {
+    opacity: 1;
+}
+
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange }
