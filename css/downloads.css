@@ -132,12 +132,15 @@ html {
   and (max-device-width: 800px) {
 
     .header .web-name {
-        left: 20%;
-        font-size: 40px;
+        top: 20%;
+        left: 22%;
+        font-size: 25px;
     }
 
     .header .buttons {
-        left: 70%;
+        top: 60%;
+        left: 50%;
         font-size: 20px;
+        width: 100%;
     }
 }
