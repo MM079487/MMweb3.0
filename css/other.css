@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial black, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    position: relative;
+    font-size: 40px;
+}
+
+.header .web-name {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition-duration: .4s;
+    opacity: .7;
+    font-family: 'Lobster', cursive;
+}
+
+.header .web-name:hover {
+    opacity: 1;
+}
+
+.header .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+.header .buttons a {
+    cursor: pointer;
+    color: rgb(165, 165, 165);
+    text-decoration: none;
+    transition-duration: .4s;
+}
+
+.header .buttons a:hover {
+    color: white;
+}
+
+.main {
+    height: 100vh;
+    background-color: rgb(11, 18, 31);
+    background-size: auto;
+    color: white;
+}
+
+.list {
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+.list img {
+    max-height: 500px;
+    max-width: 500px;
+    opacity: 1;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.poprickText, .spacexsearchText{
+    transition-duration: .4s;
+    opacity:0;
+}
+
+.poprickDiv , .spacexsearchDiv{
+    position: relative;
+}
+
+.poprickDiv:hover .poprickText{
+    opacity: 1;
+}
+
+.poprickDiv:hover .poprick{
+    opacity: .5;
+}
+
+.spacexsearchDiv:hover .spacexsearchText{
+    opacity: 1;
+}
+
+.spacexsearchDiv:hover .spacexsearch{
+    opacity: .5;
+}
+
+.poprickText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-decoration: none;
+    color: white;
+}
+
+.spacexsearchText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen 
+  and (max-device-width: 1600px) { 
+
+    .header .web-name {
+        left: 15%;
+    }
+
+    .list img {
+        max-height: 400px;
+        max-width: 400px;
+    }
+
+    .poprickText, .spacexsearchText{
+        font-size: 60px;
+    }
+}
+
+@media screen 
+  and (max-device-width: 1200px) { 
+    .header .web-name{
+        left: 15%;
+        font-size: 50px;
+    }
+
+    .header .buttons{
+        font-size: 30px;
+    }
+    
+    .list img {
+        max-height: 350px;
+        max-width: 350px;
+    }
+
+    .poprickText, .spacexsearchText{
+        font-size: 50px;
+    }
+}
+
+@media screen 
+  and (max-device-width: 800px) {
+
+    .header .web-name {
+        top: 20%;
+        left: 22%;
+        font-size: 25px;
+    }
+
+    .header .buttons {
+        top: 60%;
+        left: 50%;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .list {
+        grid-template-columns: auto;
+    }
+
+    .list img {
+        max-height: 250px;
+        max-width: 250px;
+    }
+
+    .poprickText, .spacexsearchText{
+        font-size: 40px;
+    }
+}
